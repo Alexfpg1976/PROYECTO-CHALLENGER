@@ -1,4 +1,4 @@
-function encryptText() {
+function encryptarTexto() {
     let inputText = document.getElementById("inputText").value;
     let encryptedText = inputText
         .replace(/e/g, "enter")
@@ -9,7 +9,7 @@ function encryptText() {
     document.getElementById("outputText").value = encryptedText;
 }
 
-function decryptText() {
+function desencryptarTexto() {
     let inputText = document.getElementById("inputText").value;
     let decryptedText = inputText
         .replace(/enter/g, "e")
