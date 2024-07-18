@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENCRIPTADOR DE TEXTOS</title>
+    <title>ENCRIPTADOR</title>
     <link rel="stylesheet" href="arreglos.css">
 </head>
 <body>
-    <h1>Encriptador de Textos</h1>
-    <textarea id="inputText" rows="4" cols="50" placeholder="Ingrese el texto aquí..."></textarea><br><br>
-    <button onclick="encryptarTexto()">Encriptar</button>
-    <button onclick="desencryptarTexto()">Desencriptar</button><br><br>
-    <h2>Resultado:</h2>
-    <textarea id="outputText" rows="4" cols="50" readonly></textarea>
-
+    <main class="presentacion">
+        <section class="presentacion-contenido">
+            <div class="container">
+                <h1>ENCRIPTADOR DE TEXTOS</h1>
+                <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+                <div class="buttons">
+                    <button onclick="encrytarTexto()">Encriptar</button>
+                    <button onclick="desencryptarTexto()">Desencriptar</button>
+                </div>
+                <textarea id="outputText" placeholder="Resultado..." readonly></textarea>
+                <button onclick="copiarTexto()">COPIAR</button>
+            </div>
+        </section>
+        <img class="presentacion-imagen" src="Muñeco.png" class="tamano" alt="Imagen figura">
+    </main>    
     <script src="Encriptador.js"></script>
 </body>
 </html>
