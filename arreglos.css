@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #aa8989;
     margin: 0;
 }
 
@@ -32,28 +32,6 @@ textarea {
     resize: none;
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-}
-
-button:active {
-    background-color: #0056b3;
-}
-
-button + button {
-    margin-left: 10px;
-}
-
 .presentacion{
     display: flex;
     align-items: center;
@@ -73,4 +51,49 @@ button + button {
       }
   .presentacion-contenido{
       width: 500px;
+  }
+
+  .cuadrotexto{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;   
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+  }
+  .buttons{
+    position: absolute;
+    left: 240px;
+    top: 885px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .BotonEncriptar{
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .BotonDesencriptar{
+    width: 328px;
+    height: 67px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    color: #0A3871;
   }
