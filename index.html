@@ -10,16 +10,21 @@
     <main class="presentacion">
         <section class="presentacion-contenido">
             <div class="container">
-                <textarea class="cuadrotexto" id="inputText" placeholder="Solo letras minúsculas y sin acentos aquí..."></textarea>
+                <textarea class="cuadrotexto1" id="inputText" placeholder="Ingresa solo letras minúsculas y sin acentos aquí..."></textarea>
                 <div class="buttons">
                     <button class="BotonEncriptar"   onclick="encrytarTexto()">Encriptar</button>
                     <button class="BotonDesencriptar"   onclick="desencryptarTexto()">Desencriptar</button>
                 </div>
-                <textarea id="outputText" placeholder="Resultado..." readonly></textarea>
-                <button onclick="copiarTexto()">COPIAR</button>
             </div>
-        </section>
+        </section>        
+                <textarea class="cuadrotexto2"id="outputText" placeholder="Resultado..." readonly></textarea>
+                <button class="BotonCopiar" onclick="copiarTexto()">COPIAR TEXTO RESULTADO</button>
+                    
         <img class="presentacion-imagen" src="Muñeco.png" class="tamano" alt="Imagen figura">
+        <div class="mensaje">
+            <p class="mensajeParrafo1">Ningún mensaje fue encontrado</p>
+            <p class="mensajeParrafo2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>    
     </main>    
     <script src="Encriptador.js"></script>
 </body>
