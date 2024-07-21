@@ -28,7 +28,7 @@ body {
     width: 677px;
     height: 48px;
     left: 240px;
-    top: 300px;   
+    top: 500px;   
     color: #0A3871;
     font-family: 'Inter';
     font-style: normal;
@@ -37,7 +37,7 @@ body {
   .buttons{
     position: absolute;
     left: 240px;
-    top: 685px;
+    top: 285px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -68,7 +68,7 @@ body {
   .BotonCopiar{
     position: absolute;
     left: 400px;
-    top: 425px;
+    top: 625px;
     width: 328px;
     height: 67px;
     background: #0A3871;
@@ -84,7 +84,7 @@ body {
     width: 336px;
     height: 304px;
     left: 1032px;
-    top: 183px;
+    top: 143px;
     }
 
  .mensaje{
@@ -95,7 +95,7 @@ body {
     width: 336px;
     height: 122px;
     left: 1032px;
-    top: 519px;
+    top: 459px;
   }
 
 .mensajeParrafo1{
