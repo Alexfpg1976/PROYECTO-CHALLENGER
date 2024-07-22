@@ -8,7 +8,7 @@ function encrytarTexto() {
         .replace(/u/g, "ufat");
     document.getElementById("outputText").value = encryptedText;
     document.getElementById("inputText").value = "";
-    
+}    
 
 function desencryptarTexto() {
     let text = document.getElementById("inputText").value;
