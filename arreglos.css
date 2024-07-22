@@ -82,35 +82,8 @@ body {
  .presentacion-imagen{     
     position: absolute;
     width: 336px;
-    height: 304px;
+    height: 454px;
     left: 1032px;
     top: 143px;
     }
-
- .mensaje{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    width: 336px;
-    height: 122px;
-    left: 1032px;
-    top: 459px;
-  }
-
-.mensajeParrafo1{
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  color: #343A40;
-  text-align: center;
-}
-
-.mensajeParrafo2{
-  font-family: 'Inter';
-  font-style: normal;
-  font-size: 20px;
-  text-align: center;
-  color: #495057;
-}
+ 
