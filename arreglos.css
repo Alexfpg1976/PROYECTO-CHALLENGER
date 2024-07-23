@@ -1,12 +1,24 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #b3b479;
-    margin: 0;
+:root{
+  --color-primario: #050C9C;
+  --color-secundario: #3572EF;
+  --color-terciario: #3ABEF9;
+  --color-cuarto: #A7E6FF;
 }
 
+body {
+    box-sizing: border-box;
+    background-color: var(--color-cuarto);
+   
+}
+.presentacion-logo{
+  position: absolute;
+  width: 65px;
+  height: 50px;
+  left: 40px;
+  top: 40px;
+
+
+}
 .presentacion-contenido{
       width: 500px;
   }
@@ -17,7 +29,7 @@ body {
     height: 48px;
     left: 240px;
     top: 100px;   
-    color: #0A3871;
+    color: var(--color-primario);
     font-family: 'Inter';
     font-style: normal;
     font-size: 32px;  
@@ -29,7 +41,7 @@ body {
     height: 48px;
     left: 240px;
     top: 500px;   
-    color: #0A3871;
+    color: var(--color-primario);
     font-family: 'Inter';
     font-style: normal;
     font-size: 32px;
@@ -43,26 +55,35 @@ body {
     align-items: flex-start;
     gap: 24px;
   }
+
   .BotonEncriptar{
     width: 328px;
     height: 67px;
-    background: #0A3871;
+    background: var(--color-primario);
     border-radius: 24px;
     font-family: 'Inter';
     font-size: 1.2rem;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color-secundario);
+  }
+
+  .BotonEncriptar:hover{
+    background-color: var(--color-terciario);
   }
 
   .BotonDesencriptar{
     width: 328px;
     height: 67px;
-    background: #FFFFFF;
+    background: var(--color-secundario);
     border-radius: 24px;
     font-family: 'Inter';
     font-size: 1.2rem;
     text-align: center;
-    color: #0A3871;
+    color: var(--color-promario);
+  }
+
+  .BotonDesencriptar:hover{
+    background-color: var(--color-terciario);
   }
 
   .BotonCopiar{
@@ -71,12 +92,16 @@ body {
     top: 625px;
     width: 328px;
     height: 67px;
-    background: #0A3871;
+    background: var(--color-primario);
     border-radius: 24px;
     font-family: 'Inter';
     font-size: 1.2rem;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color-secundario);
+  }
+
+  .BotonCopiar:hover{
+    background-color: var(--color-terciario);
   }
 
  .presentacion-imagen{     
@@ -86,4 +111,17 @@ body {
     left: 1032px;
     top: 143px;
     }
+
+.footer{
+  position: absolute;
+  top: 750px;
+  width: 1390px;
+  background-color: var(--color-terciario);
+  padding: 15px;
+  color: black;
+  font-family: 'Inter';
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+ }    
  
