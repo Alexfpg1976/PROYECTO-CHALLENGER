@@ -13,20 +13,19 @@
             <div>
                 <textarea class="cuadrotexto1" id="introducirTexto" placeholder="Ingresa solo letras minúsculas y sin acentos aquí..."></textarea>
                 <div class="buttons">
-                    <button class="BotonEncriptar"   onclick="encrytarTexto()">Encriptar</button>
-                    <button class="BotonDesencriptar"   onclick="desencryptarTexto()">Desencriptar</button>
+                    <button class="BotonEncriptar" onclick="encrytarTexto()">Encriptar</button>
+                    <button class="BotonDesencriptar" onclick="desencryptarTexto()">Desencriptar</button>
                 </div>
             </div>
-        </section>        
-                <textarea class="cuadrotexto2"id="SalidaTexto" placeholder="Resultado..." readonly></textarea>
-                <button class="BotonCopiar" onclick="copiarTexto()">COPIAR TEXTO RESULTADO</button>
-                    
+        </section>
+        <textarea class="cuadrotexto2" id="SalidaTexto" placeholder="Resultado..." readonly style="display: none;"></textarea>
+        <button class="BotonCopiar" id="BotonCopiar" onclick="copiarTexto()" style="display: none;">Copiar Texto Resultado</button>
         <img class="presentacion-imagen" src="Muñeco.png" alt="Imagen figura" id="Muñeco">
-        
-    </main>    
+    </main>
     <script src="Encriptador.js"></script>
 </body>
 <footer class="footer">
-   <p>Desarrollado por: Alex Pinilla</p> 
+   <p>Desarrollado por: Alex Pinilla</p>
 </footer>
+</html>
 </html>

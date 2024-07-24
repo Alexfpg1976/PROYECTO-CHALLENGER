@@ -8,9 +8,10 @@ function encrytarTexto() {
         .replace(/u/g, "ufat");
     document.getElementById("SalidaTexto").value = encryptedText;
     document.getElementById("introducirTexto").value = "";
-    ocultarImagen();
+    mostrarResultado();
     return;
-}    
+}
+
 function desencryptarTexto() {
     let text = document.getElementById("introducirTexto").value;
     let decryptedText = text
@@ -21,32 +22,32 @@ function desencryptarTexto() {
         .replace(/ufat/g, "u");
     document.getElementById("SalidaTexto").value = decryptedText;
     document.getElementById("introducirTexto").value = "";
-    ocultarImagen();
+    mostrarResultado();
     return;
-   
 }
+
 function copiarTexto() {
     let outputText = document.getElementById("SalidaTexto");
     outputText.select();
     document.execCommand("copy");
     limpiar();
-    PonerImagen();
-    //alert("Texto copiado al portapapeles");
+    ocultarResultado();
     return;
 }
-function limpiar(){
+
+function limpiar() {
     document.querySelector('#SalidaTexto').value = '';
     return;
 }
-function ocultarImagen() {
-    let imagen = document.getElementById("Muñeco");
-    if (imagen) {
-        imagen.style.display = 'none';
-    }
+
+function mostrarResultado() {
+    document.getElementById("SalidaTexto").style.display = 'block';
+    document.getElementById("BotonCopiar").style.display = 'block';
+    document.getElementById("Muñeco").style.display = 'none';
 }
-function PonerImagen() {
-    let imagen = document.getElementById("Muñeco");
-    if (imagen) {
-        imagen.style.display = 'block';
-    }
+
+function ocultarResultado() {
+    document.getElementById("SalidaTexto").style.display = 'none';
+    document.getElementById("BotonCopiar").style.display = 'none';
+    document.getElementById("Muñeco").style.display = 'block';
 }

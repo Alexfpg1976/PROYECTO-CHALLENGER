@@ -1,127 +1,121 @@
-:root{
+:root {
   --color-primario: #050C9C;
   --color-secundario: #3572EF;
   --color-terciario: #3ABEF9;
   --color-cuarto: #A7E6FF;
+  --color-quinto: #FFFFFF;
 }
 
 body {
+    width: auto;
     box-sizing: border-box;
     background-color: var(--color-cuarto);
-   
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
 }
-.presentacion-logo{
-  position: absolute;
-  width: 65px;
-  height: 50px;
-  left: 40px;
-  top: 40px;
 
-
+.presentacion {
+    padding: 25% 10%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
 }
-.presentacion-contenido{
-      width: 500px;
-  }
 
-  .cuadrotexto1{
+.presentacion-logo {
+    width: 45px;
+    height: 40px;
     position: absolute;
-    width: 677px;
-    height: 48px;
-    left: 240px;
-    top: 100px;   
-    color: var(--color-primario);
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 32px;  
-  }
+    left: 20px;
+    top: 20px;
+}
 
-  .cuadrotexto2{
-    position: absolute;
-    width: 677px;
-    height: 48px;
-    left: 240px;
-    top: 500px;   
+.cuadrotexto1, .cuadrotexto2 {
+    width: 100%;
+    height: 100px; 
     color: var(--color-primario);
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 32px;
-  }
-  .buttons{
-    position: absolute;
-    left: 240px;
-    top: 285px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.buttons {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 24px;
-  }
+    justify-content: center;
+    gap: 20px;
+}
 
-  .BotonEncriptar{
-    width: 328px;
-    height: 67px;
-    background: var(--color-primario);
+.BotonEncriptar, .BotonDesencriptar, .BotonCopiar {
+    width: 100%;
+    max-width: 200px;
+    height: 48px;
+    background-color: var(--color-primario);
     border-radius: 24px;
-    font-family: 'Inter';
-    font-size: 1.2rem;
-    text-align: center;
-    color: var(--color-secundario);
-  }
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--color-quinto);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-  .BotonEncriptar:hover{
+.BotonEncriptar:hover, .BotonDesencriptar:hover, .BotonCopiar:hover {
     background-color: var(--color-terciario);
-  }
+}
 
-  .BotonDesencriptar{
-    width: 328px;
-    height: 67px;
-    background: var(--color-secundario);
-    border-radius: 24px;
-    font-family: 'Inter';
-    font-size: 1.2rem;
-    text-align: center;
-    color: var(--color-promario);
-  }
+.BotonDesencriptar {
+    background-color: var(--color-secundario);
+}
 
-  .BotonDesencriptar:hover{
+.presentacion-imagen {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.BotonCopiar {
+    margin-top: 10px;
+    display: none; 
+}
+
+.footer {
     background-color: var(--color-terciario);
-  }
-
-  .BotonCopiar{
-    position: absolute;
-    left: 400px;
-    top: 625px;
-    width: 328px;
-    height: 67px;
-    background: var(--color-primario);
-    border-radius: 24px;
-    font-family: 'Inter';
-    font-size: 1.2rem;
+    padding: 15px;
+    color: black;
     text-align: center;
-    color: var(--color-secundario);
-  }
+    font-size: 1rem;
+}
 
-  .BotonCopiar:hover{
-    background-color: var(--color-terciario);
-  }
-
- .presentacion-imagen{     
-    position: absolute;
-    width: 336px;
-    height: 454px;
-    left: 1032px;
-    top: 143px;
+@media (min-width: 768px) {
+    .presentacion {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 50px;
     }
 
-.footer{
-  position: absolute;
-  top: 750px;
-  width: 1390px;
-  background-color: var(--color-terciario);
-  padding: 15px;
-  color: black;
-  font-family: 'Inter';
-  text-align: center;
-  font-size: 24px;
-  font-weight: 400;
- }    
- 
+    .cuadrotexto1, .cuadrotexto2 {
+        width: 50%;
+        font-size: 2rem;
+        height: 150px; 
+    }
+
+    .BotonCopiar {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .presentacion-imagen {
+        position: absolute;
+        right: 15%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
