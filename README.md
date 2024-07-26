@@ -9,11 +9,11 @@ Llaves de Encriptación
 
 -Las reglas de encriptación son las siguientes:
 
-La letra "e" se convierte en "enter".
-La letra "i" se convierte en "imes".
-La letra "a" se convierte en "ai".
-La letra "o" se convierte en "ober".
-La letra "u" se convierte en "ufat".
+-La letra "e" se convierte en "enter".
+-La letra "i" se convierte en "imes".
+-La letra "a" se convierte en "ai".
+-La letra "o" se convierte en "ober".
+-La letra "u" se convierte en "ufat".
 
 -Ejemplos
 
