@@ -2,7 +2,8 @@
 
 -¡Bienvenidas y bienvenidos a nuestro primer desafío!
 
--Durante las próximas cuatro semanas, trabajaremos en una aplicación que permite encriptar y desencriptar textos. Con esta   aplicación, podrás intercambiar mensajes secretos con otras personas que conozcan el método de encriptación utilizado.
+-Durante las próximas cuatro semanas, trabajaremos en una aplicación que permite encriptar y desencriptar textos. 
+Con esta   aplicación, podrás intercambiar mensajes secretos con otras personas que conozcan el método de encriptación utilizado.
 Llaves de Encriptación
 
 -Las reglas de encriptación son las siguientes:
