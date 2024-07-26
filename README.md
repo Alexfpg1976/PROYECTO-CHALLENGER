@@ -4,6 +4,7 @@
 
 -Durante las próximas cuatro semanas, trabajaremos en una aplicación que permite encriptar y desencriptar textos. 
 Con esta   aplicación, podrás intercambiar mensajes secretos con otras personas que conozcan el método de encriptación utilizado.
+
 Llaves de Encriptación
 
 -Las reglas de encriptación son las siguientes:
@@ -15,10 +16,12 @@ Llaves de Encriptación
 -La letra "u" se convierte en "ufat".
 
 -Ejemplos
+
 "gato" se encripta como "gaitober".
 "gaitober" se desencripta como "gato".
 
 -Requisitos
+
 Funcionamiento con letras minúsculas: La aplicación debe funcionar solo con letras minúsculas.
 No utilizar acentos ni caracteres especiales: Solo se manejarán letras sin acentos ni caracteres especiales.
 Conversión bidireccional: Debe ser posible convertir una palabra a su versión encriptada y también devolver una palabra encriptada a su versión original.
@@ -31,12 +34,13 @@ Opción de encriptar o desencriptar: El usuario debe poder elegir entre encripta
 Visualización del resultado: El resultado de la encriptación o desencriptación debe mostrarse en la pantalla.
 
 -Extras
+
 Botón de copiado: Un botón que copie el texto encriptado/desencriptado al portapapeles, similar a la funcionalidad de 
 "Ctrl-+C" o la opción "copiar" del menú de aplicaciones.
 
 -Estructura del Proyecto
 
--El proyecto contará con los siguientes archivos y directorios:
+El proyecto contará con los siguientes archivos y directorios:
 
 -index.html: Contendrá la estructura básica de la página web.
 -arreglos.css: Contendrá los estilos CSS para la página.
@@ -44,4 +48,5 @@ Botón de copiado: Un botón que copie el texto encriptado/desencriptado al port
 -README.md: Este archivo, que describe el proyecto y cómo utilizarlo.
 
 -Conclusión
+
 Este proyecto tiene un periodo de desarrollo de cuatro semanas. Trabajaremos de manera organizada y ágil para lograr un resultado eficiente y funcional. 
