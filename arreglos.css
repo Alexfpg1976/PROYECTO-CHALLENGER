@@ -25,12 +25,10 @@ body {
     position: relative;
 }
 
-.presentacion-logo {
-    width: 45px;
-    height: 40px;
-    position: absolute;
-    left: 20px;
-    top: 20px;
+.logo{
+    padding-top: 20px;
+    margin-left: 10px;
+    width: 20%;
 }
 
 .cuadrotexto1, .cuadrotexto2 {
