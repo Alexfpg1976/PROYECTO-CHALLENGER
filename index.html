@@ -2,32 +2,39 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENCRIPTADOR</title>
-    <link rel="stylesheet" href="arreglos.css">
+    <link rel="stylesheet" href="/arreglos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="logo.png" alt="logo Academia">
-        </header>
-    <main class="presentacion">
-        <section class="presentacion-contenido">
+        <img class="logo" src="/logo.png" alt="logo Academia">
+    </header>
+    <main>
+        <section>
+            <textarea class="IntroducirTexto" cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>
             <div>
-                <textarea class="cuadrotexto1" id="introducirTexto" placeholder="Ingresa solo letras minúsculas y sin acentos aquí..."></textarea>
-                <div class="buttons">
-                    <button class="BotonEncriptar" onclick="encrytarTexto()">Encriptar</button>
-                    <button class="BotonDesencriptar" onclick="desencryptarTexto()">Desencriptar</button>
-                </div>
+                <h6 class="Texto-Informativo">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="Botones">
+                <button class="BotonEncriptar" onclick="BotonEncriptar()">Encriptar</button>
+                <button class="BotonDesencriptar" onclick="BotonDesencriptar()">Desencriptar</button>
             </div>
         </section>
-        <textarea class="cuadrotexto2" id="SalidaTexto" placeholder="Resultado..." readonly style="display: none;"></textarea>
-        <button class="BotonCopiar" id="BotonCopiar" onclick="copiarTexto()" style="display: none;">Copiar Texto Resultado</button>
-        <img class="presentacion-imagen" src="Muñeco.png" alt="Imagen figura" id="Muñeco">
+        <section>
+            <textarea class="SalidaTexto" cols="20" rows="10"></textarea>
+            <div>
+                <button class="BotonCopiar" onclick="BotonCopiar()">Copiar</button>
+            </div>
+        </section>
     </main>
     <script src="Encriptador.js"></script>
+    <footer class="footer">
+        <p>Desarrollado por: Alex Pinilla</p>
+    </footer>
 </body>
-<footer class="footer">
-   <p>Desarrollado por: Alex Pinilla</p>
-</footer>
-</html>
 </html>
