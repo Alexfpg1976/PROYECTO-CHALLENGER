@@ -2,7 +2,8 @@
     --color-primario: #0A3871;
     --color-secundario: #495057;
     --color-terciario: #FFFFFF;
-    --color-cuarto: #5b8ca0;
+    --color-cuarto: #6aaec9;
+    --color-quinto: #abc5c9;
 }
 
 * {
@@ -49,7 +50,7 @@ section {
 }
 
 .SalidaTexto {
-    background: var(--color-terciario);
+    background: var(--color-quinto);
     background-image: url("Muñeco.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -103,8 +104,9 @@ section {
     font-size: 25px;
 }
 .footer {
-    background-color: var(--color-cuarto);
-    padding: 10px;
+    background: var(--color-cuarto);
+    padding: 1px;
+    margin: 1px;
     color: black;
     text-align: center;
     font-size: 1rem;
